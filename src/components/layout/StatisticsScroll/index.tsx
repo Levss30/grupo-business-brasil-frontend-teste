@@ -11,8 +11,8 @@ const Statistics = () => {
             Vendas por País
           </p>
           {statisticData.map((item, index) => (
-            <div className="p-2">
-              <StatisticsItem key={index} item={item} />
+            <div key={index} className="p-2">
+              <StatisticsItem item={item} />
             </div>
           ))}
         </div>
